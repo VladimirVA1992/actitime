@@ -1,0 +1,19 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5.6rem;
+
+  &__title {
+    color: $text-bold;
+    font-size: 4rem;
+    line-height: 130%;
+  }
+  &__text {
+    line-height: 160%;
+    font-size: 2.3rem;
+    padding: 0px 23%;
+    text-align: center;
+    color: $text-grey;
+  }
+}

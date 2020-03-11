@@ -1,0 +1,23 @@
+//system
+@import "/node_modules/normalize.css/normalize.css";
+@import "variables";
+
+//common
+@import "common";
+
+//header
+@import "blocks/header";
+//menu
+@import "blocks/menu";
+//btn
+@import "blocks/btn";
+
+//slider
+@import "blocks/slider";
+//features
+@import "blocks/features";
+
+//footer
+@import "blocks/footer";
+//form
+@import "blocks/form";

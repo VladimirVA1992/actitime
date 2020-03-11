@@ -1,0 +1,21 @@
+.btn {
+  border: 0;
+  align-self: end;
+  padding: 1.5rem 6rem;
+  color: #ffffff;
+  background-color: #9C69E2;
+  border-radius: 50px;
+  &:hover {
+    cursor: pointer;
+    background-color: $purple-hover;
+  }
+
+  &--form {
+    background-color: $orange;
+    padding: 1.5rem 2.8rem;
+    &:hover {
+      cursor: pointer;
+      background-color: $orange-hover;
+    }
+  }
+}

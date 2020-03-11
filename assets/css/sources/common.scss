@@ -1,0 +1,15 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: $font-stack;
+}
+
+.main {
+  padding: 0 18.7% 15rem 18.7%;
+}
