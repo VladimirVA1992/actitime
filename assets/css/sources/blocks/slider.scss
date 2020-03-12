@@ -4,11 +4,18 @@
   border-radius: 50px;
   background-color: #FFC84D;
   height: 58.5rem;
+  @media screen and (max-width: 320px) {
+    border-radius: 0;
+    height: 49.5rem;
+  }
 
   &__wrapper {
     display: flex;
     padding: 7% 0;
     transition: transform 0.6s ease;
+    @media screen and (max-width: 992px) {
+      padding: 15% 0;
+    }
   }
 
   &__item {
@@ -17,6 +24,14 @@
     max-width: 50%;
     padding: 0 10%;
     border-radius: 50px;
+    @media screen and (max-width: 992px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 0 20%;
+    }
+    @media screen and (max-width: 320px) {
+      padding: 0 6%;
+    }
   }
 
   &__card {
@@ -25,6 +40,27 @@
     border-radius: 50px;
     padding: 10% 15% 10% 25%;
     line-height: 160%;
+    @media screen and (max-width: 992px) {
+      padding: 10% 20% 10% 25%;
+    }
+    @media screen and (max-width: 320px) {
+      padding: 11%;
+    }
+  }
+
+  &__item:nth-child(4) > .slider__card::after {
+    content: 'NEW';
+    position: absolute;
+    left: 35%;
+    top: -2%;
+    color: #ffffff;
+    background-color: #F063B8;
+    line-height: 3rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    height: 3.4rem;
+    width: 6.9rem;
+    text-align: center;
   }
 
   &__text {
@@ -35,6 +71,15 @@
     text-decoration: none;
     font-weight: bold;
     color: #212353;
+    position: relative;
+    &::after {
+      content: '';
+      height: 5rem;
+      width: 5rem;
+      position: absolute;
+      right: -20px;
+      background: url(img/arrow-link.png) no-repeat center/contain;
+    }
   }
 
   &__item > .slider__card:before {
@@ -46,6 +91,9 @@
     font-size: 20.2rem;
     font-weight: 500;
     text-align: center;
+    @media screen and (max-width: 320px) {
+      display: none;
+    }
   }
 
   &__control {
@@ -64,8 +112,8 @@
   }
 
   &__control--active {
-    height: 15px;
-    width: 15px;
+    height: 1.5rem;
+    width: 1.5rem;
     background: #F063B8;
   }
 
@@ -86,9 +134,25 @@
 
   &__control_left {
     left: 4%;
+    @media screen and ( max-width: 992px){
+      left: 8%;
+      height: 1rem;
+      width: 1rem;
+    }
+    @media screen and ( max-width: 320px){
+      left: 35%;
+    }
   }
 
   &__control_right {
-    left: 7%;
+    left: 6%;
+    @media screen and ( max-width: 992px){
+      left: 12%;
+      height: 0.6rem;
+      width: 0.6rem;
+    }
+    @media screen and ( max-width: 320px){
+      left: 45%;
+    }
   }
 }

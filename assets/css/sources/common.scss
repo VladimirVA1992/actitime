@@ -11,5 +11,14 @@ body {
 }
 
 .main {
-  padding: 0 18.7% 15rem 18.7%;
+  padding: 0 18.7% 15rem;
+  @media screen and (max-width: 992px) {
+    padding: 0 16.7% 9.2rem;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 0 7.7% 9.2rem;
+  }
+  @media screen and (max-width: 320px) {
+    padding: 0 0 7.3rem;
+  }
 }
