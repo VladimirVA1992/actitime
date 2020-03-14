@@ -16,10 +16,15 @@
 //burger
 @import "blocks/burger";
 
-//slider
-@import "blocks/slider";
 //features
 @import "blocks/features";
+//slider
+@import "blocks/slick";
+@import "blocks/slick-theme.scss";
+@import "blocks/slider";
+//card
+@import "blocks/card";
+
 
 //footer
 @import "blocks/footer";

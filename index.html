@@ -21,7 +21,9 @@
         </div>
         <nav class="menu">
             <ul class="menu__list">
-                <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">About</a>
+                </li>
                 <li class="menu__item ">
                     <a href="#" class="menu__link nested-menu">Help<i class="fas fa-chevron-up"></i></a>
                     <ul class="menu__list">
@@ -34,10 +36,12 @@
                         </li>
                     </ul>
                 </li>
-                <li class="menu__item"><a href="#" class="menu__link">Features</a></li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Features</a>
+                </li>
             </ul>
             <div class="menu__button">
-                <button class="btn btn--menu">Sign up</button>
+                <button class="btn">Sign Up</button>
             </div>
         </nav>
         <div class="burger">
@@ -45,47 +49,62 @@
         </div>
     </header>
     <main class="main">
-        <section>
-            <div class="features">
+        <section class="features">
+            <div class="features__header">
                 <h1 class="features__title">Features</h1>
                 <p class="features__text">Some of the features and advantages that we provide for those of you who store data in this Data Warehouse.</p>
             </div>
+
             <div class="slider">
-                <div class="slider__wrapper">
-                    <div class="slider__item">
-                        <div class="slider__card" data-number="1">
-                            <h2 class="slider__title">First Feature</h2>
-                            <p class="slider__text">Little Red Cap opened her eyes and when she saw the sunbeams dancing to and fro through the trees and how the ground was covered with beautiful flowers.</p>
-                            <a href="" class="slider__link">Learn more</a>
-                        </div>
-                    </div>
-                    <div class="slider__item">
-                        <div class="slider__card" data-number="2">
-                            <h2 class="slider__title">Second Feature</h2>
-                            <p class="slider__text">Each time she picked one she thought that she could see an even more beautiful one a little way off, and she ran after it, going further and further into the woods.</p>
-                            <a href="" class="slider__link">Learn more</a>
-                        </div>
-                    </div>
-                    <div class="slider__item">
-                        <div class="slider__card" data-number="3">
-                            <h2 class="slider__title">Third Feature</h2>
-                            <p class="slider__text">The wolf pressed the latch, and the door opened. He stepped inside, went straight to the grandmother's bed, and ate her up.</p>
-                            <a href="" class="slider__link">Learn more</a>
-                        </div>
-                    </div>
-                    <div class="slider__item">
-                        <div class="slider__card" data-number="4">
-                            <h2 class="slider__title">Fourth Feature</h2>
-                            <p class="slider__text">Little Red Cap had run after the flowers. After she had gathered so many that she could not carry any more, she remembered her grandmother.</p>
-                            <a href="" class="slider__link">Learn more</a>
-                        </div>
+                <div class="slider__item">
+                    <div class="card" data-number="1">
+                        <h2 class="card__title">First Feature</h2>
+                        <p class="card__text">Little Red Cap opened her eyes and when she saw the sunbeams dancing to and fro through the trees and how the ground was covered with beautiful flowers.</p>
+                        <a href="" class="card__link">Learn more
+                            <svg width="22" height="16" tabindex="0">
+                                <use xlink:href="img/sprite.svg#arrow"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
-                <a class="slider__control slider__control_left slider__control--active" href="#" role="button"></a>
-                <a class="slider__control slider__control_right " href="#" role="button"></a>
-                <a class="slider__control slider__control_right slider__control_dot" href="#" role="button"></a>
-                <a class="slider__control slider__control_right slider__control_dot" href="#" role="button"></a>
+
+                <div class="slider__item">
+                    <div class="card" data-number="2">
+                        <h2 class="card__title">Second Feature</h2>
+                        <p class="card__text">Each time she picked one she thought that she could see an even more beautiful one a little way off, and she ran after it, going further and further into the woods.</p>
+                        <a href="" class="card__link">Learn more
+                            <svg width="22" height="16" tabindex="0">
+                                <use xlink:href="img/sprite.svg#arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slider__item">
+                    <div class="card" data-number="3">
+                        <h2 class="card__title">Third Feature</h2>
+                        <p class="card__text">The wolf pressed the latch, and the door opened. He stepped inside, went straight to the grandmother's bed, and ate her up.</p>
+                        <a href="" class="card__link">Learn more
+                            <svg width="22" height="16" tabindex="0">
+                                <use xlink:href="img/sprite.svg#arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slider__item">
+                    <div class="card" data-number="4">
+                        <h2 class="card__title">Fourth Feature</h2>
+                        <p class="card__text">Little Red Cap had run after the flowers. After she had gathered so many that she could not carry any more, she remembered her grandmother.</p>
+                        <a href="" class="card__link">Learn more
+                            <svg width="22" height="16" tabindex="0">
+                                <use xlink:href="img/sprite.svg#arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
+
         </section>
     </main>
     <footer class="footer">
@@ -96,8 +115,12 @@
             </svg>
         </div>
         <ul class="footer__list">
-            <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">About Us</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Privacy Policy</a>
+            </li>
         </ul>
         <form action="#" class="form">
             <div class="form__group">
@@ -110,6 +133,8 @@
         </form>
     </footer>
     <script src="assets/js/common.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
     <script src="assets/js/slider.js"></script>
 </body>
 </html>

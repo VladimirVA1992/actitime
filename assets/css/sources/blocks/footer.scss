@@ -8,7 +8,7 @@
   @media screen and (max-width: 992px) {
     padding: 5% 3%;
   }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 576px) {
     flex-wrap: wrap;
     padding: 5% 5%;
   }
@@ -21,7 +21,7 @@
     @media screen and (max-width: 992px) {
       flex-direction: column;
     }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 576px) {
       flex: 1;
       padding-bottom: 5%;
     }
@@ -30,6 +30,9 @@
   &__link {
     text-decoration: none;
     color: #ffffff;
+    &:hover {
+      color: #efe8e8;
+    }
     @media screen and (max-width: 992px) {
       padding: 10% 0 0 0;
       display: block;
